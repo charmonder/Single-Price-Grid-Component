@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width:100%;
+}
+
+.price-card{
+  background-color: #ffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.join{
+  padding: 40px;
+}
+
+.join h1{
+  color: hsl(179, 62%, 43%);
+  font-size: 1.4rem;
+}
+
+.join h2{
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+  padding: 20px 0 10px;
+}
+
+.join p{
+  color: hsl(218, 22%, 67%);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 550px;
+}
+
+.card-bottom{
+  display: flex;
+}
+
+.subscription{
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+  color: hsl(204, 43%, 93%);
+  padding: 35px 40px 30px;
+  width: 100%;
+}
+
+h2{
+  font-size: 1rem;
+  padding-bottom: 15px;
+}
+
+h1{
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+span{
+  color: hsla(204, 43%, 93%, 0.5);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.subscription p{
+  font-size: 1rem;
+  padding: 10px 0 30px;
+}
+
+button{
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.why-us{
+  background-color: hsl(179, 62%, 47%);
+  border-radius: 0 0 10px 0;
+  color: hsl(204, 43%, 93%);
+  padding: 35px 40px 30px;
+  width: 100%;
+}
+
+.why-us p{
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width:600px){
+  .price-card{
+    width: 85%;
+  }
+
+  .join, .subscription, .why-us{
+    padding: 20px;
+  }
+
+  .card-bottom{
+    flex-direction: column;
+  }
+
+  .subscription{
+    border-radius: 0;
+  }
+
+  .why-us{
+    border-radius: 0 0 10px 10px;
+  }
+}
